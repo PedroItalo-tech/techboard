@@ -22,8 +22,8 @@
 
 /*Estilo do Desktop*/
 body{ /*O body é o corpo da página*/
-    background-color: #0E1014; /*O "background-color" define a cor do fundo*/
-    color: #FFFFFF; /*O color define a cor do texto, quando no body, todos os textos ficam brancos*/
+    background-color: #ffffff; /*O "background-color" define a cor do fundo*/
+    color: #000000; /*O color define a cor do texto, quando no body, todos os textos ficam brancos*/
 } 
 
 header img{
