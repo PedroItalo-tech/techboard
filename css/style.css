@@ -1,0 +1,119 @@
+@font-face { /*Importa um fonte personalizada*/
+    font-family: "Unbounded"; /*Nome*/
+    src: url("../fontes/Unbounded-Bold.ttf") format("truetype"); /*Define de onde vem a fonte, "url" é o caminho e o "format" é o formato*/
+    font-weight: 700; /*Grossura da fonte*/
+    font-style: normal; /*Estilo da fonte*/
+    font-display: swap; /*Caso a fonte principal não carregue, permite exibir uma fonte alternativa*/
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fontes/Poppins-Bold.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*{ /*O "*" significa todos os elementos da página, é o reset do css.*/ /**/
+    margin: 0; /*O "margin = 0;" remove o espaçamento externo padrão do navegador*/
+    padding: 0; /*já o "padding = 0;" remove o espaçamento interno padrão do navegador*/
+}
+
+/*Estilo do Desktop*/
+body{ /*O body é o corpo da página*/
+    background-color: #0E1014; /*O "background-color" define a cor do fundo*/
+    color: #FFFFFF; /*O color define a cor do texto, quando no body, todos os textos ficam brancos*/
+} 
+
+header img{
+    display: block;
+    margin: 75px 0 0 360px;
+}
+
+h1{
+    font-size: 64px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+    /*font-family: serif;
+    font-family: sans-serif;
+    font-family: monospace;
+    font-family: cursive;
+    font-family: fantasy;*/ /*Fontes genéricas*/
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin: 24px auto 0;
+    width: 792px;
+}
+
+h1 span{ /*Pega o "span" que está dentro do "h1" do html*/
+    color: #9747FF; /*Define a cor do "span"*/
+} 
+
+a{ /*Seleciona todos os links*/
+    color: #FFFFFF; /*Define a cor dos links*/
+    font-family: "Poppins", sans-serif;
+    font-size: 24px; /*Define o tamanho do texto*/
+    text-decoration: none; /*Remove o sublinhado dos links*/
+    background-color: #9747FF; /*Cor de fundo*/
+    width: 340px; /*Define a largura*/
+    height: 66px; /*Define a altura*/
+    display: block; /*Faz o link se comportar como bloco*/
+    text-align: center; /*Centraliza o texto horizontalmente*/
+    line-height: 66px; /*Define a altura*/
+    border-radius: 36px; /*Arredonda as bordas*/
+    margin: 40px auto; /*Define a margem*/
+}
+
+a:hover{
+    background-color: #8233e8;
+}
+
+section img{
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: auto;
+}
+
+
+@media(max-width: 768px){ /*Aplica o CSS de acordo com o tamanho da tela*/
+
+    header img{
+        margin: 65px 0 0 60px
+    }
+
+    p{
+        width: 648px;
+    }
+}
+
+@media(max-width: 375px){
+    header img{
+        margin: 32px 0 0 16px
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 20px;
+        width: 340px;
+    }
+
+    a{
+        font-size: 20px;
+        width: 251px;
+    }
+    
+    section img{
+        width: 341px 230px;
+    }
+}
